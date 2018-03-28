@@ -1,42 +1,55 @@
 {
-  "name": "formiojs",
-	"version": "2.28.7",
-  "description": "Common js library for client side interaction with <form.io>",
-  "main": "build/formio.js",
-  "files": [
-    "dist",
-    "build",
-    "utils.js",
-    "wizard.js",
-    "form.js",
-    "embed.js",
-    "full.js"
+  "_from": "formiojs@2.29.10",
+  "_id": "formiojs@2.29.10",
+  "_inBundle": false,
+  "_integrity": "sha1-qtBg6AVeuMNiJZD9WiBgTa1ISfc=",
+  "_location": "/formiojs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "formiojs@2.29.10",
+    "name": "formiojs",
+    "escapedName": "formiojs",
+    "rawSpec": "2.29.10",
+    "saveSpec": null,
+    "fetchSpec": "2.29.10"
+  },
+  "_requiredBy": [
+    "/",
+    "/angular-formio"
   ],
-  "scripts": {
-    "prepublish": "gulp build",
-    "build": "esdoc;gulp build",
-    "serve": "jekyll serve --config _config.yml,_config.dev.yml",
-    "test": "./node_modules/karma/bin/karma start --verbose --single-run",
-    "test:watch": "./node_modules/karma/bin/karma start --no-single-run --auto-watch"
+  "_resolved": "https://registry.npmjs.org/formiojs/-/formiojs-2.29.10.tgz",
+  "_shasum": "aad060e8055eb8c3622590fd5a20604dad4849f7",
+  "_spec": "formiojs@2.29.10",
+  "_where": "C:\\Projects\\MRR\\MRR_UI\\webapp",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "env"
+          ]
+        }
+      ]
+    ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/formio/formio.js.git"
+  "bugs": {
+    "url": "https://github.com/formio/formio.js/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Travis Tidwell",
-      "github": "https://github.com/travist",
       "email": "travis@form.io"
     },
     {
       "name": "Randall Knutson",
-      "github": "https://github.com/randallknutson",
       "email": "randall@form.io"
     },
     {
       "name": "Doug Lee",
-      "github": "https://github.com/douglaselee",
       "email": "douglaselee@comcast.net"
     },
     {
@@ -48,20 +61,15 @@
       "email": "guillaume.smaha@gmail.com"
     }
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/formio/formio.js/issues"
-  },
-  "homepage": "https://github.com/formio/formio.js#readme",
   "dependencies": {
     "browser-cookies": "^1.2.0",
-    "choices.js": "github:formio/Choices#ae69ff4",
+    "choices.js": "^3.0.3",
     "dialog-polyfill": "^0.4.9",
     "eventemitter2": "^5.0.1",
-    "flatpickr": "^4.2.4",
-    "i18next": "^10.3.0",
+    "flatpickr": "^4.3.2",
+    "i18next": "^10.5.0",
     "json-logic-js": "^1.2.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "moment": "^2.20.1",
     "native-promise-only": "^0.8.1",
     "shallow-copy": "0.0.1",
@@ -71,18 +79,24 @@
     "vanilla-text-mask": "^5.0.1",
     "whatwg-fetch": "^2.0.3"
   },
+  "deprecated": false,
+  "description": "Common js library for client side interaction with <form.io>",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-espower": "^2.4.0",
+    "babel-plugin-transform-optional-chaining": "^7.0.0-beta.3",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
-    "browserify": "^15.2.0",
+    "browserify": "^16.1.0",
     "chai": "^4.1.2",
     "chance": "^1.0.13",
     "del": "^3.0.0",
     "esdoc": "^1.0.4",
     "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^4.18.1",
+    "eslint-config-formio": "^1.1.4",
     "fetch-mock": "^6.0.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^7.0.1",
@@ -103,28 +117,42 @@
     "gulp-wrapper": "^1.0.0",
     "jshint": "^2.9.5",
     "karma": "^2.0.0",
-    "karma-browserify": "^5.1.3",
+    "karma-browserify": "^5.2.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-mocha": "^1.3.0",
     "karma-phantomjs-launcher": "^1.0.2",
-    "marked": "^0.3.12",
+    "marked": "^0.3.16",
     "mocha": "^5.0.0",
     "power-assert": "^1.4.2",
-    "sinon": "^4.2.2",
+    "sinon": "^4.4.2",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.10.0",
     "written-number": "^0.8.1"
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "env"
-          ]
-        }
-      ]
-    ]
-  }
+  "files": [
+    "dist",
+    "lib",
+    "utils.js",
+    "wizard.js",
+    "form.js",
+    "embed.js",
+    "full.js"
+  ],
+  "homepage": "https://github.com/formio/formio.js#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "formiojs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formio/formio.js.git"
+  },
+  "scripts": {
+    "build": "esdoc;gulp build",
+    "lint": "eslint src",
+    "prepublish": "gulp build",
+    "serve": "jekyll serve --config _config.yml,_config.dev.yml",
+    "test": "./node_modules/karma/bin/karma start --verbose --single-run",
+    "test:watch": "./node_modules/karma/bin/karma start --no-single-run --auto-watch"
+  },
+  "version": "2.29.10"
 }
